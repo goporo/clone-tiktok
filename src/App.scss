@@ -1,0 +1,108 @@
+// @import "normalize.css";
+
+:root {
+  --primary: #fe2c55;
+  --black: #000;
+  --white: #fff;
+  --text-color: #161823;
+
+  --font-family: "ProximaNova", sans-serif;
+
+  --default-layout-header-height: 60px;
+  --default-layout-width: 1150px;
+  --search-bar-height: 46px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+}
+
+body {
+  font-family: var(--font-family);
+  font-size: 1rem;
+  line-height: 1.5;
+  text-rendering: optimizespeed;
+  color: var(--text-color);
+  overflow-y: overlay;
+}
+
+a {
+  color: var(--text-color);
+  text-decoration: none;
+}
+
+img {
+  //remove space below img ...
+  vertical-align: top;
+
+  user-select: none;
+}
+
+// Fonts emmbeded
+@font-face {
+  font-family: ProximaNova;
+  src: url("/assets/fonts/Proxima-Nova-Regular.woff2");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: ProximaNova;
+  src: url("/assets/fonts/ProximaNova-Semibold.woff2");
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: ProximaNova;
+  src: url("/assets/fonts/Proxima-Nova-Bold.woff");
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: SofiaPro;
+  src: url("/assets/fonts/sofiapro-bold.woff");
+  font-weight: 700;
+}
+
+body {
+  font-family: ProximaNova, Arial, Tahoma, PingFangSC, sans-serif;
+  font-size: 14px;
+  color: rgba(22, 24, 35, 1);
+  background-color: rgba(255, 255, 255, 1);
+  overscroll-behavior: contain;
+  direction: ltr;
+  -webkit-font-smoothing: antialiased;
+}
+
+button {
+  border: 0;
+  background-color: transparent;
+}
+
+@media only screen and (max-width: 600px) {
+  .wrapper {
+    width: 100% !important;
+  }
+  .main-wrapper {
+    width: 100% !important;
+  }
+  .header {
+    width: 100% !important;
+  }
+  .search-bar {
+    display: none;
+  }
+  button.btn-wrapper {
+    display: none !important;
+  }
+}
+
+.go__icon {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+}
